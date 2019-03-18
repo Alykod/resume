@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css'
 import Head from './header'
 import Background from './components/background'
-class App extends Component {
+import About from './components/about'
 
+class App extends Component {
+  state={
+    which: 'bg'
+  }
+  handleClick = (which) => {
+    this.setState({which})
+  } 
   render() {
     return (
       <div className="App">
-              <Head/>
-              <Background/>
-        {/* <header className="App-header">
-          <h1>test</h1>
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-        </header> */}
+              <Head clicked={this.handleClick}/>
+     { this.state.which ==='bg' && <Background/> }
+        {this.state.which === 'about' && <About />}
       </div>
     );
   }

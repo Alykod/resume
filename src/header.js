@@ -11,33 +11,16 @@ export default class header extends Component {
          <Ic.DiJsBadge className='magicES6'/>
         <ul>
             <li className="">
-            <a href="#background">
+            <a onClick={()=>this.props.clicked('bg')} >
             Background
             </a>
             </li>
-            <li className="\">
+            <li onClick={()=>this.props.clicked('about')}>
             <a href="#">
-               Work 
+               Who Am I ? 
                </a>
             </li>
-            <li className='underline--magical'>
-                <a href='#'>
-                Test
-                </a>
-            </li>
-            <h2>
-            <a href = '#'>
-            Projects
-
-            </a>
-            
-
-            </h2>
-        </ul>
-{/* 
-        <div className="magic">
-
-        </div> */}
+          </ul>
       </div>
     )
   }
