@@ -13,24 +13,24 @@ const Work = () => {
         <div className="content">
               <p className="describe">Developer</p>
               <p className="describe">React Native</p>
-              <p>Worked On an Agile Team building a React Native Application (iOS, android and Windows UWP)
+              <p>Worked On an Agile Team building a React Native Application (iOS, android and Windows UWP)<br/>
                  Was tasked with  deploying builds and setting up the continuous integration and creating final
                  production builds with coordination with the off-shore team
-                 Build reusable components
-                 Unit testing using Jest
-                 Detailed documentation for processes
+                 Build reusable components<br/>
+                 Unit testing using Jest<br/>
+                 Detailed documentation for processes<br/>
               </p>
               <p className="describe">React JS/PWA</p>
-              <p>Worked On an Agile Team building a ReactJS Progressive Web Application
-                 Intermediate knowledge of WorkBox and vanilla Service workers 
-                 production builds with coordination with the off-shore team
-                 Build reusable components
-                 Unit testing using Jest
-                 Detailed documentation for processes
+              <p>Worked On an Agile Team building a ReactJS Progressive Web Application<br/>
+                 Intermediate knowledge of WorkBox and vanilla Service workers <br/>
+                 production builds with coordination with the off-shore team<br/>
+                 Build reusable components<br/>
+                 Unit testing using Jest<br/>
+                 Detailed documentation for processes<br/>
               </p>
               <p className="describe">React JS/PWA X 2</p>
-              <p>Build a caching strategy using indexed Db, and a background sync strategy for iOS. 
-                 Building reusable components and using Kendo UI, React Bootstrap and Redux/Redux.
+              <p>Build a caching strategy using indexed Db, and a background sync strategy for iOS. <br/>
+                 Building reusable components and using Kendo UI, React Bootstrap and Redux/Redux.<br/>
               </p>
             </div>
             <div className="content">
