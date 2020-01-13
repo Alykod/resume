@@ -241,6 +241,17 @@ a:focus::before {
     border-bottom: 3px solid red;
     outline:0;
   }
+  .skillsSelected {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 50px;
+    border-bottom: 3px solid red;
+    outline:0;
+    padding: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
+  }
 
   .listResume { 
     margin: 5px;
@@ -262,7 +273,15 @@ a:focus::before {
     border-bottom: 3px solid green;
     outline:0;
   }
-
+  .experienceSelected {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 50px;
+    border-bottom: 3px solid green;
+    outline:0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
   .education { 
     font-family: 'News Cycle', sans-serif;
     font-size: 20px;
@@ -276,6 +295,15 @@ a:focus::before {
     font-size: 50px;
     border-bottom: 3px solid blue;
     outline:0;
+  }
+  .educationSelected {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 50px;
+    border-bottom: 3px solid blue;
+    outline:0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
   }
 
   .filler {
