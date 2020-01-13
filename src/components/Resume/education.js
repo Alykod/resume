@@ -1,8 +1,13 @@
 import React from "react";
+import {useSpring, animated} from 'react-spring'
 
 const Education = () => {
+  const fade = useSpring({
+    from: {opacity : 0}, opacity: 1
+  })
+  
   return (
-    <>
+    <animated.div style={fade}>
       <div className="content">
         <p className="describe">University Of Central Florida </p>
         <p className="describe">Bachelors in IT</p>
@@ -12,7 +17,7 @@ const Education = () => {
         <p className="describe">Florida A & M University</p>
         <p>Attended Florida A & M for Pre-Pharmacy</p>
       </div>
-    </>
+    </animated.div>
   );
 };
 

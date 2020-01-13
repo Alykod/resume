@@ -1,9 +1,14 @@
 import React from 'react'
+import {useSpring, animated} from 'react-spring'
 
+const Skills = (props) => {
 
-const skills = (props) => {
+  const fade = useSpring({
+    from: {opacity : 0}, opacity: 1
+  })
+
     return (
-        <>
+        <animated.div style={fade}>
               <div className="content">
                 <p className="describe">Javascript</p>
                 <p>ES6 React React-Native Redux</p>
@@ -29,9 +34,10 @@ const skills = (props) => {
                 <p className="describe">Tool-sets</p>
                 <p>Visual studio code Visual studios 2019 git</p>
                 <p>xCode, Android Studio, Microsoft DevOPS (VSTS)</p>
+                <p>Adobe XD, Sketch</p>
               </div>
-            </>
+        </animated.div>
     )
 } 
 
-export default skills
+export default Skills

@@ -3,7 +3,7 @@ import "./App.css";
 import Head from "./header";
 import About from "./components/about";
 import Background from "./components/background";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
         <div className="App">
           <Head />
           <Switch>
-            <Route exact path="/">
+            <Route path="/background">
               <Background />
             </Route>
             <Route path="/about">

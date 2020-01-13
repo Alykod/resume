@@ -5,16 +5,18 @@ import WorkExperience from './Resume/workExperience';
 import Education from './Resume/education';
 import Skills from './Resume/skills';
 import _ from 'lodash'
+import { useSpring, animated } from 'react-spring';
 
-function Background(props){
+const Background =  (props) => {
 
   const [category, SetCategory] = useState({
     skills: false, 
     experience: false, 
     education: false
   });
-
-
+  const fade = useSpring({
+    from: {opacity : 0}, opacity: 1
+  })
   const handleClick = type => {
     let updatedCategory = _.cloneDeep(category);
     updatedCategory.skills = false;
@@ -31,7 +33,7 @@ function Background(props){
       <ResumeHeader handleClick={handleClick} />
       <div className="filler">
       {category.skills && <Skills/>}
-      {category.experience && <WorkExperience />}
+      {category.experience && <WorkExperience/>}
       {category.education && <Education />}
       </div>
       </>
